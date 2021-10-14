@@ -18,3 +18,4 @@
 use App\Http\Controllers\ToDoController;
 
 Route::get('/', 'ToDoController@index');
+

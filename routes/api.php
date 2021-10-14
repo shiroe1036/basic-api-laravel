@@ -17,6 +17,8 @@ Route::delete('toDo/{idToDo}', 'API\ToDoController@delete');
 Route::post('toDo', 'API\ToDoController@store');
 Route::get('toDo', 'API\ToDoController@index');
 
+Route::apiResource('levelClass', 'API\LevelClassController');
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
